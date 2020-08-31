@@ -9,12 +9,4 @@ zuul:
         ### 以 /api-producer/访问转发到生产服务
       path: /api-producer/**
       serviceId: eureka-producer
-    api-c:
-        ### 以 /api-producer/访问转发到生产服务
-      path: /api-consumer2/**
-      serviceId: eureka-consumer
-    api-d:
-        ### 以 /api-producer/访问转发到生产服务
-      path: /api-producer2/**
-      serviceId: eureka-producer
 
