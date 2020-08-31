@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    api-a:
+     ### 以 /api-consumer/访问转发到消费服务
+      path: /api-consumer/**
+      ### 服务别名 zuul网关默认整合ribbon 自动实现负载均衡轮询效果
+      serviceId: eureka-consumer
+    api-b:
+        ### 以 /api-producer/访问转发到生产服务
+      path: /api-producer/**
+      serviceId: eureka-producer
